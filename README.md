@@ -1,92 +1,107 @@
-# TechSophy-Assignment
 # 💸 Personal Finance Tracker with Spending Insights
 
-A modular Python system that analyzes personal financial transaction data and provides intelligent insights using anomaly detection, clustering, and visual analytics. Built as part of the **Techsophy Coding Test** for software engineering assessment.
+A modular AI-powered Python project that takes raw financial transaction data and generates smart visual insights, detects anomalies, clusters behavior, and recommends actionable improvements.
+
+Designed for real-world applications like **expense auditing**, **budget tracking**, and **automated financial intelligence**.
 
 ---
 
-## 🚀 Project Overview
+## 📌 Problem Statement
 
-This system helps individuals understand their spending patterns by:
-- Parsing raw transaction data
-- Identifying unusual spending behavior
-- Grouping similar transactions using unsupervised learning (clustering)
-- Visualizing trends across time and category
-- Generating smart, human-readable recommendations
+Build a system that:
+- Ingests raw financial transactions from a CSV
+- Analyzes spending patterns
+- Detects unusual (anomalous) transactions
+- Clusters similar behaviors using unsupervised ML
+- Visualizes monthly trends and category spending
+- Recommends insights to users based on financial behavior
+
+---
+
+## 🎯 Project Goals
+
+| Goal | Achieved |
+|------|----------|
+| 🧹 Data Cleaning & Parsing | ✅ Yes |
+| 🔍 Anomaly Detection (Z-Score) | ✅ Yes |
+| 🧠 Clustering (KMeans) | ✅ Yes |
+| 📈 Visualizations (Seaborn) | ✅ Yes |
+| 🤖 Personalized Recommendations | ✅ Yes |
+| 📦 Modular Architecture | ✅ Yes |
 
 ---
 
 ## 🧠 Skills Demonstrated
 
-| Category        | Skills Applied |
-|----------------|----------------|
-| **AI/ML**       | KMeans clustering, Z-score anomaly detection |
-| **Data Handling** | Parsing timestamps, cleaning missing data, handling categorical formats |
-| **Critical Thinking** | Categorizing behavior, defining anomalies, suggesting improvements |
-| **Visualization** | Spending trends, transaction type charts |
-| **Software Design** | Modular code structure, pipeline-based processing |
+- AI/ML: Clustering (KMeans), Outlier Detection (Z-Score)
+- Data Wrangling: Parsing timestamps, handling missing data
+- Visualization: Matplotlib, Seaborn
+- Modular Python Design: Reusable `src/` pipeline
+- Problem Solving: Making sense of financial behavior
 
 ---
 
 ## 🧱 Folder Structure
+
+```bash
 personal-finance-tracker/
-├── data/ # Place raw CSV transaction files here
-│ └── financial_anomaly_data.csv
-│
-├── notebooks/
-│ └── analysis_notebook.ipynb # Complete pipeline using all modules
-│
-├── src/
-│ ├── ingestion/
-│ │ └── load_data.py # Load and clean transaction data
-│ ├── analysis/
-│ │ ├── anomaly_detection.py # Z-score based anomaly detection
-│ │ └── cluster_analysis.py # KMeans clustering on amount + type
-│ ├── visualization/
-│ │ └── plots.py # Monthly trends and category distributions
-│ └── recommendation/
-│ └── generate_insights.py # Generate smart text-based insights
-│
-├── assets/ # (Optional) Diagrams or visuals
-│
-└── README.md # This file
+├── data/                          # 🧾 CSV input files (e.g., transactions.csv)
+│   └── financial_anomaly_data.csv
+├── notebooks/                     # 📒 Jupyter analysis pipeline
+│   └── analysis_notebook.ipynb
+├── src/                           # 🧠 Core modules
+│   ├── ingestion/
+│   │   └── load_data.py
+│   ├── analysis/
+│   │   ├── anomaly_detection.py
+│   │   └── cluster_analysis.py
+│   ├── visualization/
+│   │   └── plots.py
+│   └── recommendation/
+│       └── generate_insights.py
+├── assets/                        # 🖼️ Diagrams or architecture images
+│   └── architecture.png (optional)
+├── requirements.txt               # 📦 All dependencies
+├── .gitignore                     # 🚫 Files to exclude from version control
+└── README.md                      # 📘 You're here!
+ # Clone the repo
+git clone https://github.com/your-username/personal-finance-tracker.git
+cd personal-finance-tracker
+
+# Create and activate virtual environment (optional)
+python -m venv venv
+source venv/bin/activate       # Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the analysis notebook
+cd notebooks
+jupyter notebook analysis_notebook.ipynb
+CSV Input → Cleaned Data → Anomaly Detection
+                          → Clustering
+                          → Visualizations
+                          → Recommendations
+
+# 💸 Personal Finance Tracker with Spending Insights
+
+A modular AI-powered Python project that takes raw financial transaction data and generates smart visual insights, detects anomalies, clusters behavior, and recommends actionable improvements.
+
+Designed for real-world applications like **expense auditing**, **budget tracking**, and **automated financial intelligence**.
 
 ---
 
-## 📥 Input Format (CSV)
+## 🚀 Run in Google Colab
 
-Your CSV file must include these fields:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/personal-finance-tracker/blob/main/notebooks/analysis_notebook.ipynb)
 
-| Column          | Description                         |
-|-----------------|-------------------------------------|
-| `Timestamp`      | Date and time of transaction        |
-| `TransactionID`  | Unique transaction identifier       |
-| `AccountID`      | Unique customer/account ID          |
-| `Amount`         | Value of the transaction            |
-| `Merchant`       | Vendor/merchant of the transaction  |
-| `TransactionType`| Purchase, Withdrawal, etc.          |
-| `Location`       | Place of transaction                |
+No setup needed — upload your CSV file and run the full pipeline directly in the cloud.
 
 ---
 
-## 📊 Features
+## 📌 Problem Statement
 
-✅ Clean and ingest transaction data  
-✅ Perform **anomaly detection** using Z-score  
-✅ Apply **clustering** (KMeans) to group similar transaction behaviors  
-✅ Generate **line plots** for monthly trends  
-✅ Produce **bar plots** for transaction category distributions  
-✅ Output **personalized insights and recommendations**
-
----
-
-## 📈 Sample Insights
-
-- 🔍 "5 unusual transactions detected this month exceeding ₹10,000."
-- 📉 "High withdrawal volume — over 40% of your spending is in cash."
-- 🛍️ "Most of your April spending was in 'Shopping' — ₹18,000."
-
----
-
-
+...
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/notebooks/analysis_notebook.ipynb)
 
