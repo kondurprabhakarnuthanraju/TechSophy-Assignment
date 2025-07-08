@@ -92,16 +92,41 @@ Designed for real-world applications like **expense auditing**, **budget trackin
 ---
 
 ## 🚀 Run in Google Colab
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/personal-finance-tracker/blob/main/notebooks/analysis_notebook.ipynb)
+https://colab.research.google.com/drive/14LydGsEOvYBzLrJJ0zPvbieslMa5z13b?usp=sharing
 
 No setup needed — upload your CSV file and run the full pipeline directly in the cloud.
 
 ---
+## 📓 Google Colab Notebook: `analysis_notebook.ipynb`
 
-## 📌 Problem Statement
+This Jupyter notebook provides a complete, interactive implementation of the **Personal Finance Tracker with Spending Insights** project.
 
-...
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
-https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/notebooks/analysis_notebook.ipynb)
+It includes everything from data loading to machine learning analysis, visualizations, and an interactive interface built using Gradio — all runnable in a Google Colab environment.
+
+---
+
+### 🔍 What This Notebook Covers
+
+| 📌 Section               | ✅ Description |
+|--------------------------|----------------|
+| **1. Load & Explore Data** | Reads the raw CSV file (`financial_anomaly_data.csv`) and displays basic summaries (null values, stats, samples). |
+| **2. Preprocessing**       | Cleans the dataset, handles missing values, converts timestamps, and encodes categorical values. |
+| **3. Anomaly Detection**   | Uses Z-score to detect high-value or statistically abnormal transactions. |
+| **4. Clustering Analysis** | Applies KMeans clustering to identify common transaction behaviors and patterns. |
+| **5. Visualizations**      | Uses `Seaborn` and `Matplotlib` to plot monthly trends and transaction categories. |
+| **6. Evaluation**          | Measures clustering performance using **Silhouette Score**. |
+| **7. Recommendation Engine** | Generates insights and spending suggestions based on behavior and anomalies. |
+| **8. Gradio UI**           | Interactive app to input new transactions and classify them as normal or unusual, along with cluster info. |
+
+---
+
+### 📊 Sample Output Features
+
+- 🔍 Anomaly Alerts: "⚠️ ₹10,000 transaction marked as unusual!"
+- 🧠 Clusters like "Regular Utility", "Cash Withdrawals", "High-Spend Outliers"
+- 📈 Trend plots of monthly spending and transaction types
+- 💬 Personalized recommendations like:
+  > "Most of your April spending was in 'Shopping' — ₹18,000. Consider setting a budget."
+
+---
 
